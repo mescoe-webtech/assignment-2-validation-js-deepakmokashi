@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration form</title>
+
+ <link rel="stylesheet" href="reg.css">
+ <script>  
+    function validation(){  
+    var name=document.regi.uname.value; 
+    var password=document.regi.pass.value;   
+      
+    if (name==null || name==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(password==""){  
+      alert("Password cant be blank");  
+      return false;  
+      }  
+    }  
+    </script>  
+</head>
+
+<body bgcolor="#E6E6FA">
+<form name="regi"  method="post" onsubmit="return validation()" >
+<h2>Registration Form</h2>
+
+<label for="r1" id="fn">First Name :</label>
+<input type="text" name="fname" id="r1"><br/>
+
+<label  for="r2" id="ln">Last Name :</label>
+<input type="text" name="lname" id="r2"><br/>
+
+<label  for="r3" id="un">Username :</label>
+<input type="text" name="uname" id="r3"><br/>
+
+<label  for="r4" id="pwd">Password :</label>
+<input type="password" name="pass" id="r4"><br/>
+
+<label  for="r5" id="em">Email :</label>
+<input type="text" name="email" id="r5"><br/>
+
+<label  for="r6" id="mn">Mobile No :</label>
+<input type="text" name="mno" id="r6"><br/>
+
+<label for="r8" id="cy">City:</label>
+<select name="city" id="r8">
+<option>Select</option>
+<option>Pune</option>
+<option>Mumbai</option>
+<option>Nagpur</option>
+<option>Nasik</option>
+</select><br/><br/>
+
+<button type="submit" value="Submit" id="button">Register</button>
+
+
+</form>
+</body>
+</html>  
